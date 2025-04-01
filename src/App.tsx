@@ -52,23 +52,15 @@ const NavigationLink = styled.a`
 `;
 
 const NavigationContainer = styled.div`
-  width: 614px;
+  width: 45vw;
   display: flex;
   justify-content: right;
 `;
 
-const SideBarContainer = styled.div`
-  display: flex;
-  margin-left: 60px;
-
-  position: fixed;
-  bottom: 0;
-`;
-
 const TopSideBarContainer = styled.div`
-  display: flex;
+  /* display: flex;
   position: absolute;
-  bottom: 70vh;
+  top: 75px; */
 `;
 
 const IconContainer = styled.div`
@@ -89,14 +81,10 @@ const Header = styled.h3`
   margin-bottom: 26px;
 `;
 
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
 const Content = styled.div`
-  width: 45%;
+  /* width: 60%;
   margin-left: 55vw;
+  margin-right: 20px; */
 `;
 
 const Text = styled.p`
@@ -125,6 +113,7 @@ const Tag = styled.button`
   letter-spacing: -1.5%;
 
   margin-right: 15px;
+  margin-top: 8px;
 
 `;
 
@@ -137,18 +126,15 @@ function App() {
 
   return (
     <>
-      <Container>
-        <SideBarContainer>
+      <div id="profile" />
+      <br />
+      <br />
+
+      <div className="container">
+        <div className="side-bar-container">
           <TopSideBarContainer>
 
-            <IconContainer>
-              <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
-              <a href="https://x.com/hey_imthomas" target="_blank"><FontAwesomeIcon icon={faXTwitter} /><br /></a>
-              <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
-              <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
-            </IconContainer>
-
-            <NavigationContainer>
+            <NavigationContainer className="navigation-container">
               <Navigation>
                 <NavigationLink onClick={() => scrollToItem('profile')}>Profile</NavigationLink>
                 <NavigationLink onClick={() => scrollToItem('experience')}>Experience</NavigationLink>
@@ -158,19 +144,28 @@ function App() {
             </NavigationContainer>
           </TopSideBarContainer>
 
-          <div style={{ position: 'absolute', bottom: '60px', left: '0px', width: '45vw' }}>
-            <div style={{ zIndex: 5, position: 'absolute', bottom: '-400px', left: '-400px', width: '775px', height: '775px', background: '#3a884d50', filter: 'blur(300px)' }}></div>
+          <div className="header-section">
+            <div className="blob" style={{ zIndex: 5, position: 'absolute', width: '775px', height: '775px', background: '#3a884d50', filter: 'blur(300px)' }}></div>
 
             <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '60px', marginBottom: '10px' }}>Thomas Smith</h1>
 
-            <div style={{ fontSize: '25px', letterSpacing: '-7%', fontWeight: 400 }}>Full Stack Software Engineer</div>
+            <div style={{ fontSize: '25px', letterSpacing: '-7%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
             <p style={{ opacity: '50%' }}>Seeking a mid-level software developer position. Equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</p>
 
           </div>
-        </SideBarContainer>
+
+          <br />
+          <IconContainer className="icon-container">
+            <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
+            <a href="https://x.com/hey_imthomas" target="_blank"><FontAwesomeIcon icon={faXTwitter} /><br /></a>
+            <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
+            <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
+            <Button className="resume-mobile"><a target="_blank" href="https://docs.google.com/document/d/1FY0CFF31kKSlLftsCB1xMdSZPi_p5HSX_THCgqqiDJ8">Resume</a></Button>
+          </IconContainer>
+
+        </div>
 
         <Content>
-          <div id="profile" />
           <Header>Profile</Header>
           <Text>I am a software engineer seeking a mid-level software developer position. I am equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</Text>
 
@@ -211,11 +206,13 @@ function App() {
           <div id="projects"></div>
           <br />
           <br />
-          <Header >Projects</Header>
+          <Header>Projects</Header>
 
-          <div>JSON Parser in Java <a href="https://github.com/hotpepper11/json-java" target="_blank"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right', marginRight: '40px' }} /></a></div>
+          <a href="https://github.com/hotpepper11/json-java" target="_blank">
+            <div>JSON Parser in Java <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
+          </a>
           <DateSubHeader>March 2025</DateSubHeader>
-          <Text>A JSON Parser that supports converting Java objects to a JSON string and vice versa.</Text>
+          <Text>A JSON Parser that can convert Java objects to a JSON string and vice versa. Complete with unit tests using JUnit.</Text>
 
           <br />
 
@@ -227,7 +224,10 @@ function App() {
           <br/>
           <br/>
 
-          <div>Where is Good <a href="https://github.com/hotpepper11/where_is_good" target="_blank"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right', marginRight: '40px' }} /></a></div>
+          <a href="https://github.com/hotpepper11/where_is_good" target="_blank">
+            <div>Where is Good <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
+          </a>
+
           <DateSubHeader>2024</DateSubHeader>
 
           <Text>Wrote a data visualization platform that aggregates and analyzes audience location data, providing musicians and speakers with insights for tour optimization.</Text>
@@ -244,9 +244,9 @@ function App() {
 
           <br />
 
-          <Text style={{ textAlign: "center" }}>Built in React.js by yours truly</Text>
+          <Text style={{ textAlign: "center" }}>Built in React.js</Text>
         </Content>
-      </Container>
+      </div>
     </>
   )
 }

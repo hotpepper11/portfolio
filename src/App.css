@@ -7,6 +7,8 @@ body {
   /* White       #dddbd4  */
   /* Green       #3a884d  */
   /* Dark green  #173236  */
+
+  text-align: justify;
 }
 
 a {
@@ -24,7 +26,88 @@ svg {
   }
 
   opacity: 50%;
+}
 
-  /* font-size: 24px; */
+/* Phones */
+@media only screen and (max-width: 1100px) {
+  .side-bar-container {
+    /* display: flex; */
+    /* margin-left: 60px; */
+
+    /* top: 0; */
+  }
+
+  .container {
+    display: block;
+  }
+
+  .blob {
+    bottom: 400px;
+    left: -400px;
+  }
+
+  .resume-mobile {
+    display: block;
+  }
+
+  .navigation-container {
+    display: none !important;
+  }
+
+  .icon-container {
+    display: flex !important;
+    align-items: center;
+
+    svg {
+      margin-right: 15px;
+    }
+
+    button {
+      margin-bottom: 13px;
+    }
+  }
+
+  h1 {
+    font-size: 45px !important;
+  }
+
+  .sub-header {
+    font-size: 20px !important;
+  }
+
+  body {
+    margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .side-bar-container {
+    display: flex;
+    margin-left: 60px;
+
+    position: fixed;
+    top: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  .header-section {
+    position: absolute;
+    bottom: -95vh;
+    left: 0px;
+    width: 45vw;
+  }
+
+  .blob {
+    bottom: -400px;
+    left: -400px;
+  }
+
+  .resume-mobile {
+    display: none;
+  }
 }
 
