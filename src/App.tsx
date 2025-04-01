@@ -1,10 +1,8 @@
-// import { useState } from 'react'
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-// import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Button = styled.button`
   background-color: #3a884ddb;
@@ -57,12 +55,6 @@ const NavigationContainer = styled.div`
   justify-content: right;
 `;
 
-const TopSideBarContainer = styled.div`
-  /* display: flex;
-  position: absolute;
-  top: 75px; */
-`;
-
 const IconContainer = styled.div`
   svg {
     font-size: 24px;
@@ -79,12 +71,6 @@ const Header = styled.h3`
   font-weight: 500;
 
   margin-bottom: 26px;
-`;
-
-const Content = styled.div`
-  /* width: 60%;
-  margin-left: 55vw;
-  margin-right: 20px; */
 `;
 
 const Text = styled.p`
@@ -132,7 +118,14 @@ function App() {
 
       <div className="container">
         <div className="side-bar-container">
-          <TopSideBarContainer>
+          <div className='top-side-bar-container'>
+            <IconContainer className="icon-container-desktop">
+              <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
+              <a href="https://x.com/hey_imthomas" target="_blank"><FontAwesomeIcon icon={faXTwitter} /><br /></a>
+              <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
+              <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
+              <Button className="resume-mobile"><a target="_blank" href="https://docs.google.com/document/d/1FY0CFF31kKSlLftsCB1xMdSZPi_p5HSX_THCgqqiDJ8">Resume</a></Button>
+            </IconContainer>
 
             <NavigationContainer className="navigation-container">
               <Navigation>
@@ -142,7 +135,7 @@ function App() {
                 <Button><a target="_blank" href="https://docs.google.com/document/d/1FY0CFF31kKSlLftsCB1xMdSZPi_p5HSX_THCgqqiDJ8">Resume</a></Button>
               </Navigation>
             </NavigationContainer>
-          </TopSideBarContainer>
+          </div>
 
           <div className="header-section">
             <div className="blob" style={{ zIndex: 5, position: 'absolute', width: '775px', height: '775px', background: '#3a884d50', filter: 'blur(300px)' }}></div>
@@ -155,7 +148,7 @@ function App() {
           </div>
 
           <br />
-          <IconContainer className="icon-container">
+          <IconContainer className="icon-container-mobile">
             <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
             <a href="https://x.com/hey_imthomas" target="_blank"><FontAwesomeIcon icon={faXTwitter} /><br /></a>
             <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
@@ -165,7 +158,7 @@ function App() {
 
         </div>
 
-        <Content>
+        <div className='content'>
           <Header>Profile</Header>
           <Text>I am a software engineer seeking a mid-level software developer position. I am equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</Text>
 
@@ -245,7 +238,7 @@ function App() {
           <br />
 
           <Text style={{ textAlign: "center" }}>Built in React.js</Text>
-        </Content>
+        </div>
       </div>
     </>
   )

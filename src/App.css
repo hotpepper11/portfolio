@@ -30,13 +30,6 @@ svg {
 
 /* Phones */
 @media only screen and (max-width: 1100px) {
-  .side-bar-container {
-    /* display: flex; */
-    /* margin-left: 60px; */
-
-    /* top: 0; */
-  }
-
   .container {
     display: block;
   }
@@ -54,7 +47,7 @@ svg {
     display: none !important;
   }
 
-  .icon-container {
+  .icon-container-mobile {
     display: flex !important;
     align-items: center;
 
@@ -77,6 +70,10 @@ svg {
 
   body {
     margin: 0 20px;
+  }
+
+  .icon-container-desktop {
+    display: none;
   }
 }
 
@@ -108,6 +105,22 @@ svg {
 
   .resume-mobile {
     display: none;
+  }
+
+  .icon-container-mobile {
+    display: none;
+  }
+
+  .content {
+    width: 60%;
+    margin-left: 55vw;
+    margin-right: 20px;
+  }
+
+  .top-side-bar-container {
+    display: flex;
+    position: absolute;
+    top: 75px;
   }
 }
 
