@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
-import { faArrowUpRightFromSquare, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 // import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Button = styled.button`
@@ -137,8 +137,6 @@ function App() {
 
   return (
     <>
-      <br />
-      <br />
       <Container>
         <SideBarContainer>
           <TopSideBarContainer>
@@ -172,14 +170,17 @@ function App() {
         </SideBarContainer>
 
         <Content>
-          <Header id="profile">Profile</Header>
+          <div id="profile" />
+          <Header>Profile</Header>
           <Text>I am a software engineer seeking a mid-level software developer position. I am equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</Text>
 
           <Text>The primary technologies I have used throughout the years are <b>Ruby on Rails</b>, <b>AWS</b>, and <b>React.js</b>. I have three years of professional experience working with each one and have developed many personal projects with them. That being said, I also excel at building software in <b>C/C++</b> and <b>Java</b>.</Text>
 
+          <div id="experience"></div>
+
           <br />
 
-          <Header id="experience">Experience</Header>
+          <Header>Experience</Header>
 
           <div>Lead Software Engineer, Upward Thought</div>
           <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
@@ -207,9 +208,10 @@ function App() {
           <Tag>PostgreSQL</Tag>
           <Tag>Docker</Tag>
 
+          <div id="projects"></div>
           <br />
           <br />
-          <Header id="projects">Projects</Header>
+          <Header >Projects</Header>
 
           <div>JSON Parser in Java <a href="https://github.com/hotpepper11/json-java" target="_blank"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right', marginRight: '40px' }} /></a></div>
           <DateSubHeader>March 2025</DateSubHeader>
