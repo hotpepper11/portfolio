@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import { faArrowUpRightFromSquare, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+// import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 const Button = styled.button`
-  background-color: #127382;
+  background-color: #3a884ddb;
   color: #dddbd4;
   padding: 7px 19px;
   border-radius: 4px;
@@ -17,7 +19,7 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #127382c0;
+    background-color: #3a884d89;
 
     transition: 0.2s;
   }
@@ -58,30 +60,21 @@ const NavigationContainer = styled.div`
 const SideBarContainer = styled.div`
   display: flex;
   margin-left: 60px;
+
+  position: fixed;
+  bottom: 0;
 `;
 
 const TopSideBarContainer = styled.div`
   display: flex;
+  position: absolute;
+  bottom: 70vh;
 `;
 
 const IconContainer = styled.div`
   svg {
-    cursor: pointer;
-
-    &:hover {
-      opacity: 90% !important;
-
-      transition: 0.2s;
-    }
-
-    opacity: 50%;
     font-size: 24px;
     margin-bottom: 16px;
-  }
-
-  a {
-    text-decoration: none;
-    color: #dddbd4;
   }
 `;
 
@@ -102,9 +95,8 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  float: left;
   width: 45%;
-  margin-right: 40px;
+  margin-left: 55vw;
 `;
 
 const Text = styled.p`
@@ -137,6 +129,12 @@ const Tag = styled.button`
 `;
 
 function App() {
+  const scrollToItem = (item: string) => {
+    const element = document.getElementById(item);
+
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <br />
@@ -148,45 +146,45 @@ function App() {
             <IconContainer>
               <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
               <a href="https://x.com/hey_imthomas" target="_blank"><FontAwesomeIcon icon={faXTwitter} /><br /></a>
-              <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
               <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
+              <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
             </IconContainer>
 
             <NavigationContainer>
               <Navigation>
-                <NavigationLink>About</NavigationLink>
-                <NavigationLink>Experience</NavigationLink>
-                <NavigationLink>Projects</NavigationLink>
-                <Button>Resume</Button>
+                <NavigationLink onClick={() => scrollToItem('profile')}>Profile</NavigationLink>
+                <NavigationLink onClick={() => scrollToItem('experience')}>Experience</NavigationLink>
+                <NavigationLink onClick={() => scrollToItem('projects')}>Projects</NavigationLink>
+                <Button><a target="_blank" href="https://docs.google.com/document/d/1FY0CFF31kKSlLftsCB1xMdSZPi_p5HSX_THCgqqiDJ8">Resume</a></Button>
               </Navigation>
             </NavigationContainer>
           </TopSideBarContainer>
 
-          <div style={{ position: 'absolute', bottom: '60px', left: '80px', width: '614px' }}>
+          <div style={{ position: 'absolute', bottom: '60px', left: '0px', width: '45vw' }}>
             <div style={{ zIndex: 5, position: 'absolute', bottom: '-400px', left: '-400px', width: '775px', height: '775px', background: '#3a884d50', filter: 'blur(300px)' }}></div>
 
             <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '60px', marginBottom: '10px' }}>Thomas Smith</h1>
 
             <div style={{ fontSize: '25px', letterSpacing: '-7%', fontWeight: 400 }}>Full Stack Software Engineer</div>
-            <p style={{ opacity: '50%' }}>Seeking a mid-level software developer position. Equally open to full-stack positions that continue to build on prior experience or new technologies.</p>
+            <p style={{ opacity: '50%' }}>Seeking a mid-level software developer position. Equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</p>
 
           </div>
         </SideBarContainer>
 
         <Content>
-          <Header>Profile</Header>
-          <Text>I am a software engineer seeking a mid-level software developer position. I am equally open to full-stack positions that continue to build on prior experience or new technologies.</Text>
+          <Header id="profile">Profile</Header>
+          <Text>I am a software engineer seeking a mid-level software developer position. I am equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</Text>
 
-          <Text>My primary languages I have used throughout the years are <b>Ruby on Rails</b>, <b>AWS</b>, and <b>React.js</b>. I have three years of professional experience working with both and have developed many personal projects with them. That being said, I also excel at building software in <b>C/C++</b> and <b>Java</b>.</Text>
+          <Text>The primary technologies I have used throughout the years are <b>Ruby on Rails</b>, <b>AWS</b>, and <b>React.js</b>. I have three years of professional experience working with each one and have developed many personal projects with them. That being said, I also excel at building software in <b>C/C++</b> and <b>Java</b>.</Text>
 
           <br />
 
-          <Header>Experience</Header>
+          <Header id="experience">Experience</Header>
 
           <div>Lead Software Engineer, Upward Thought</div>
           <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
 
-          <Text>Developed a search system to get the best results from 100GB of blog posts, books, and video transcripts. Deployed a EC2 instance for a Ruby on Rails app, set up pipelines for transmitting over 700GB of data to and from S3, created Lambda functions for monitoring S3 uploads via presigned urls, and implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
+          <Text>Developed a search system to get the best results from 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via presigned urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
 
           <br />
 
@@ -201,7 +199,7 @@ function App() {
           <div>Junior Software Engineer, Prime Labs Inc.</div>
           <DateSubHeader>June 2022 - March 2024 · Part-time</DateSubHeader>
 
-          <Text>TODO</Text>
+          <Text>Built a fully functioning WYSYWIG text editor in React.js without the use of any libraries. Built a multi-layered graph with shifting and the ability to show/hide specific graphs. Built a report generation tool that screenshots each graph and table, and allows users to insert the images into the text editor.</Text>
           <br />
 
           <Tag>Ruby on Rails</Tag>
@@ -211,12 +209,12 @@ function App() {
 
           <br />
           <br />
-          <Header>Projects</Header>
+          <Header id="projects">Projects</Header>
 
-          <div>JSON Parser in Java</div>
+          <div>JSON Parser in Java <a href="https://github.com/hotpepper11/json-java" target="_blank"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right', marginRight: '40px' }} /></a></div>
           <DateSubHeader>March 2025</DateSubHeader>
+          <Text>A JSON Parser that supports converting Java objects to a JSON string and vice versa.</Text>
 
-          <Text>Github goes here</Text>
           <br />
 
           <Tag>Java</Tag>
@@ -227,7 +225,7 @@ function App() {
           <br/>
           <br/>
 
-          <div>Where is Good</div>
+          <div>Where is Good <a href="https://github.com/hotpepper11/where_is_good" target="_blank"><FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right', marginRight: '40px' }} /></a></div>
           <DateSubHeader>2024</DateSubHeader>
 
           <Text>Wrote a data visualization platform that aggregates and analyzes audience location data, providing musicians and speakers with insights for tour optimization.</Text>
@@ -236,19 +234,15 @@ function App() {
           <Tag>Ruby on Rails</Tag>
           <Tag>AWS</Tag>
           <Tag>Javascript</Tag>
+          <Tag>SQLite</Tag>
           <Tag>CSS</Tag>
 
           <br/>
           <br/>
 
-          Github goes here
-
-
-
-          <br />
           <br />
 
-          <Text style={{ textAlign: "center" }}>Built in React.js</Text>
+          <Text style={{ textAlign: "center" }}>Built in React.js by yours truly</Text>
         </Content>
       </Container>
     </>

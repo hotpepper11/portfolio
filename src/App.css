@@ -9,3 +9,22 @@ body {
   /* Dark green  #173236  */
 }
 
+a {
+  text-decoration: none;
+  color: #dddbd4;
+}
+
+svg {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 90% !important;
+
+    transition: 0.2s;
+  }
+
+  opacity: 50%;
+
+  /* font-size: 24px; */
+}
+
