@@ -41,10 +41,15 @@ svg {
 
   .resume-mobile {
     display: block;
+
+    z-index: 5;
   }
 
   .navigation-container {
     display: none !important;
+
+
+    z-index: 5;
   }
 
   .icon-container-mobile {
@@ -53,6 +58,12 @@ svg {
 
     svg {
       margin-right: 15px;
+
+      z-index: 5;
+    }
+
+    a {
+      z-index: 5;
     }
 
     button {
@@ -95,7 +106,7 @@ svg {
     position: absolute;
     bottom: -95vh;
     left: 0px;
-    width: 45vw;
+    width: 30vw;
   }
 
   .blob {
@@ -113,7 +124,7 @@ svg {
 
   .content {
     width: 60%;
-    margin-left: 55vw;
+    margin-left: 40vw;
     margin-right: 20px;
   }
 
@@ -121,6 +132,7 @@ svg {
     display: flex;
     position: absolute;
     top: 75px;
+    width: 30vw;
   }
 }
 

@@ -140,9 +140,9 @@ function App() {
           <div className="header-section">
             <div className="blob" style={{ zIndex: 5, position: 'absolute', width: '775px', height: '775px', background: '#3a884d50', filter: 'blur(300px)' }}></div>
 
-            <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '60px', marginBottom: '10px' }}>Thomas Smith</h1>
+            <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '45px', marginBottom: '10px' }}>Thomas Smith</h1>
 
-            <div style={{ fontSize: '25px', letterSpacing: '-7%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
+            <div style={{ fontSize: '20px', letterSpacing: '-7%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
             <p style={{ opacity: '50%' }}>Seeking a mid-level software developer position. Equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</p>
 
           </div>
@@ -162,7 +162,7 @@ function App() {
           <Header>Profile</Header>
           <Text>I am a software engineer seeking a mid-level software developer position. I am equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</Text>
 
-          <Text>The primary technologies I have used throughout the years are <b>Ruby on Rails</b>, <b>AWS</b>, and <b>React.js</b>. I have three years of professional experience working with each one and have developed many personal projects with them. That being said, I also excel at building software in <b>C/C++</b> and <b>Java</b>.</Text>
+          <Text>The primary technologies I have used throughout the years are <b>Ruby on Rails</b>, <b>AWS</b>, and <b>React.js</b>. I have three years of professional experience working with each one and have developed many personal projects with them. I also excel at building software in <b>C/C++</b> and <b>Java</b>.</Text>
 
           <div id="experience"></div>
 
@@ -173,7 +173,7 @@ function App() {
           <div>Lead Software Engineer, Upward Thought</div>
           <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
 
-          <Text>Developed a search system to get the best results from 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via presigned urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
+          <Text>Developed a search system to query over 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via presigned urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
 
           <br />
 
@@ -195,6 +195,7 @@ function App() {
           <Tag>React.js</Tag>
           <Tag>PostgreSQL</Tag>
           <Tag>Docker</Tag>
+          <Tag>Gitlab</Tag>
 
           <div id="projects"></div>
           <br />
@@ -221,7 +222,7 @@ function App() {
             <div>Where is Good <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
           </a>
 
-          <DateSubHeader>2024</DateSubHeader>
+          <DateSubHeader>TODO 2024</DateSubHeader>
 
           <Text>Wrote a data visualization platform that aggregates and analyzes audience location data, providing musicians and speakers with insights for tour optimization.</Text>
           <br />
