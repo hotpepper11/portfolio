@@ -4,28 +4,28 @@ import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-i
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
-const Button = styled.button`
-  background-color: #3a884ddb;
-  color: #dddbd4;
-  padding: 7px 19px;
-  border-radius: 4px;
-  border: none;
-  font-weight: 550;
+// const Button = styled.button`
+//   background-color: #3a884ddb;
+//   color: #dddbd4;
+//   padding: 7px 19px;
+//   border-radius: 4px;
+//   border: none;
+//   font-weight: 550;
 
-  opacity: 90%;
+//   opacity: 90%;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  &:hover {
-    background-color: #3a884d89;
+//   &:hover {
+//     background-color: #3a884d89;
 
-    transition: 0.2s;
-  }
-`;
+//     transition: 0.2s;
+//   }
+// `;
 
 const Navigation = styled.div`
   display: flex;
-  height: 135px;
+  height: 100px;
   flex-direction: column;
   justify-content: space-between;
   width: 85px;
@@ -124,7 +124,6 @@ function App() {
               <a href="https://x.com/hey_imthomas" target="_blank"><FontAwesomeIcon icon={faXTwitter} /><br /></a>
               <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
               <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
-              <Button className="resume-mobile"><a target="_blank" href="https://docs.google.com/document/d/1FY0CFF31kKSlLftsCB1xMdSZPi_p5HSX_THCgqqiDJ8">Resume</a></Button>
             </IconContainer>
 
             <NavigationContainer className="navigation-container">
@@ -132,7 +131,6 @@ function App() {
                 <NavigationLink onClick={() => scrollToItem('profile')}>Profile</NavigationLink>
                 <NavigationLink onClick={() => scrollToItem('experience')}>Experience</NavigationLink>
                 <NavigationLink onClick={() => scrollToItem('projects')}>Projects</NavigationLink>
-                <Button><a target="_blank" href="https://docs.google.com/document/d/1FY0CFF31kKSlLftsCB1xMdSZPi_p5HSX_THCgqqiDJ8">Resume</a></Button>
               </Navigation>
             </NavigationContainer>
           </div>
@@ -153,7 +151,6 @@ function App() {
             <a href="https://x.com/hey_imthomas" target="_blank"><FontAwesomeIcon icon={faXTwitter} /><br /></a>
             <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
             <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
-            <Button className="resume-mobile"><a target="_blank" href="https://docs.google.com/document/d/1FY0CFF31kKSlLftsCB1xMdSZPi_p5HSX_THCgqqiDJ8">Resume</a></Button>
           </IconContainer>
 
         </div>
@@ -170,12 +167,21 @@ function App() {
 
           <Header>Experience</Header>
 
+          <div>Software Engineer Intern, Skyfish</div>
+          <DateSubHeader>April 2025 - Present · Part-time</DateSubHeader>
+
+          <Text>Managed scripts for compiling and building repositories.</Text>
+
+          <Tag>Bash</Tag>
+          <Tag>C++</Tag>
+          <Tag>Bitbucket</Tag>
+
+          <br /><br /><br /><br />
+
           <div>Lead Software Engineer, Upward Thought</div>
           <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
 
           <Text>Developed a search system to query over 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via presigned urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
-
-          <br />
 
           <Tag>Ruby on Rails</Tag>
           <Tag>AWS</Tag>
@@ -189,7 +195,6 @@ function App() {
           <DateSubHeader>June 2022 - March 2024 · Part-time</DateSubHeader>
 
           <Text>Built a fully functioning WYSYWIG text editor in React.js without the use of any libraries. Built a multi-layered graph with shifting and the ability to show/hide specific graphs. Built a report generation tool that screenshots each graph and table, and allows users to insert the images into the text editor.</Text>
-          <br />
 
           <Tag>Ruby on Rails</Tag>
           <Tag>React.js</Tag>
@@ -202,30 +207,27 @@ function App() {
           <br />
           <Header>Projects</Header>
 
-          <a href="https://github.com/hotpepper11/json-java" target="_blank">
+          {/* <a href="https://github.com/hotpepper11/json-java" target="_blank">
             <div>JSON Parser in Java <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
           </a>
           <DateSubHeader>March 2025</DateSubHeader>
           <Text>A JSON Parser that can convert Java objects to a JSON string and vice versa. Complete with unit tests using JUnit.</Text>
 
-          <br />
-
           <Tag>Java</Tag>
           <Tag>Data Structures</Tag>
-          <Tag>Unit Tests</Tag>
+          <Tag>Unit Tests</Tag> */}
 
+          {/* <br/>
           <br/>
-          <br/>
-          <br/>
+          <br/> */}
 
           <a href="https://github.com/hotpepper11/where_is_good" target="_blank">
             <div>Where is Good <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
           </a>
 
-          <DateSubHeader>TODO 2024</DateSubHeader>
+          <DateSubHeader>February 2024</DateSubHeader>
 
           <Text>Wrote a data visualization platform that aggregates and analyzes audience location data, providing musicians and speakers with insights for tour optimization.</Text>
-          <br />
 
           <Tag>Ruby on Rails</Tag>
           <Tag>AWS</Tag>
