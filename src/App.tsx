@@ -181,7 +181,7 @@ function App() {
           <div>Lead Software Engineer, Upward Thought</div>
           <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
 
-          <Text>Developed a search system to query over 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via presigned urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
+          <Text>Developed a search system to query over 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via pre-signed urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
 
           <Tag>Ruby on Rails</Tag>
           <Tag>AWS</Tag>
@@ -194,7 +194,7 @@ function App() {
           <div>Junior Software Engineer, Prime Labs Inc.</div>
           <DateSubHeader>June 2022 - March 2024 · Part-time</DateSubHeader>
 
-          <Text>Built a fully functioning WYSYWIG text editor in React.js without the use of any libraries. Built a multi-layered graph with shifting and the ability to show/hide specific graphs. Built a report generation tool that screenshots each graph and table, and allows users to insert the images into the text editor.</Text>
+          <Text>Built a fully functioning WYSIWYG text editor in React.js without the use of any libraries. Built a multi-layered graph with shifting and the ability to show/hide specific graphs. Built a report generation tool that screenshots each graph and table, and allows users to insert the images into the text editor.</Text>
 
           <Tag>Ruby on Rails</Tag>
           <Tag>React.js</Tag>
