@@ -170,7 +170,7 @@ function App() {
           <div>Software Engineer Intern, Skyfish</div>
           <DateSubHeader>April 2025 - Present · Part-time</DateSubHeader>
 
-          <Text>Managed scripts for compiling and building repositories.</Text>
+          <Text>Managed scripts for compiling and building repositories into Debian projects for drone hardware.</Text>
 
           <Tag>Bash</Tag>
           <Tag>C++</Tag>
