@@ -167,17 +167,6 @@ function App() {
 
           <Header>Experience</Header>
 
-          <div>Software Engineer Intern, Skyfish</div>
-          <DateSubHeader>April 2025 - Present · Part-time</DateSubHeader>
-
-          <Text>Managed scripts for compiling and building repositories into Debian projects for drone hardware.</Text>
-
-          <Tag>Bash</Tag>
-          <Tag>C++</Tag>
-          <Tag>Bitbucket</Tag>
-
-          <br /><br /><br /><br />
-
           <div>Lead Software Engineer, Upward Thought</div>
           <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
 
