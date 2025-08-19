@@ -165,7 +165,7 @@ function App() {
 
           <Header>Experience</Header>
 
-          <div>Lead Software Engineer, Upward Thought</div>
+          <div>Software Engineer, Upward Thought</div>
           <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
 
           <Text>Developed a search system to query over 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via pre-signed urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
