@@ -121,7 +121,7 @@ function App() {
           <div className='top-side-bar-container'>
             <IconContainer className="icon-container-desktop">
               <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
-              <a href="https://www.linkedin.com/in/tomi-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
+              <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
               <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
             </IconContainer>
 
@@ -137,7 +137,7 @@ function App() {
           <div className="header-section">
             <div className="blob" style={{ zIndex: 5, position: 'absolute', width: '775px', height: '775px', background: '#3a884d50', filter: 'blur(300px)' }}></div>
 
-            <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '45px', marginBottom: '10px' }}>Tomi Smith</h1>
+            <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '45px', marginBottom: '10px' }}>Thomas Smith</h1>
 
             <div style={{ fontSize: '20px', letterSpacing: '-7%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
             <p style={{ opacity: '50%' }}>Seeking a mid-level software developer position. Equally open to full-stack positions that either continue to build on prior experience or employ new technologies.</p>
@@ -147,7 +147,7 @@ function App() {
           <br />
           <IconContainer className="icon-container-mobile">
             <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
-            <a href="https://www.linkedin.com/in/tomi-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
+            <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
             <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
           </IconContainer>
 
