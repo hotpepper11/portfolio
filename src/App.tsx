@@ -165,8 +165,18 @@ function App() {
 
           <Header>Experience</Header>
 
+          <div>Software Engineer Intern, Skyfish</div>
+          <DateSubHeader>April 2025 - May 2025</DateSubHeader>
+
+          <Text>Managed scripts for compiling and building repositories into Debian projects for drone hardware.</Text>
+
+          <Tag>Bash</Tag>
+          <Tag>Bitbucket</Tag>
+
+          <br /><br /><br /><br />
+
           <div>Software Engineer, Upward Thought</div>
-          <DateSubHeader>Feb 2023 - Present · Part-time</DateSubHeader>
+          <DateSubHeader>Feb 2023 - June 2025</DateSubHeader>
 
           <Text>Developed a search system to query over 100GB of blog posts, books, and video transcripts. Deployed an EC2 instance for a Ruby on Rails app. Set up pipelines for transmitting over 700GB of data to and from S3. Created Lambda functions for monitoring S3 uploads via pre-signed urls. Implemented cost-saving AWS optimizations, resulting in a ~90% monthly cost reduction.</Text>
 
@@ -179,7 +189,7 @@ function App() {
           <br /><br /><br /><br />
 
           <div>Junior Software Engineer, Prime Labs Inc.</div>
-          <DateSubHeader>June 2022 - March 2024 · Part-time</DateSubHeader>
+          <DateSubHeader>June 2022 - March 2024</DateSubHeader>
 
           <Text>Built a fully functioning WYSIWYG text editor in React.js without the use of any libraries. Built a multi-layered graph with shifting and the ability to show/hide specific graphs. Built a report generation tool that screenshots each graph and table, and allows users to insert the images into the text editor.</Text>
 
