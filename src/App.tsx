@@ -193,51 +193,16 @@ function App() {
           <br />
           <Header>Education</Header>
 
-          <a href="https://github.com/hotpepper11/where_is_good" target="_blank">
-            <div>Western Governors University <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
-          </a>
+          <div>Western Governors University</div>
 
           <Text>BS, Computer Science (Graduating March 2026)</Text>
-          <Text><b>Coursework:</b> Java, Python, SQL, HTML, CSS, Javascript</Text>
-
-          <Tag>Ruby on Rails</Tag>
-          <Tag>AWS</Tag>
-          <Tag>Javascript</Tag>
-          <Tag>SQLite</Tag>
-          <Tag>CSS</Tag>
-
-          <br /><br /><br /><br />
-
-          <a href="https://github.com/hotpepper11/todo" target="_blank">
-            <div>Full-Stack Customer Scheduling Platform <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
-          </a>
-
-          <Text>Architected a multi-tier GUI application using Java Spring Boot and Angular, implementing a custom Model-View-Controller (MVC) pattern to ensure separation of concerns and maintainability.</Text>
-          <Text>Optimized relational database performance by designing a normalized MySQL schema and writing efficient SQL queries to handle real-time CRUD operations with multi-user concurrency control.</Text>
-          <Text>Developed logic to handle time-zone conversions (UTC/Local) and automated data validation, reducing scheduling conflicts and improving data integrity.</Text>
 
           <Tag>Java</Tag>
-          <Tag>Spring Boot</Tag>
-          <Tag>Angular</Tag>
-          <Tag>MySQL</Tag>
-
-          <br /><br /><br /><br />
-
-          <a href="https://github.com/hotpepper11/todo" target="_blank">
-            <div>Logistics Routing & Optimization Engine <FontAwesomeIcon icon={faArrowUpRightFromSquare} style={{ float: 'right' }} /></div>
-          </a>
-
-          <Text>Developed a custom Heuristic Routing Algorithm (Nearest Neighbor) to solve a variation of the Traveling Salesman Problem (TSP), successfully optimizing delivery routes for multiple vehicles under strict time and load constraints.</Text>
-          <Text>Implemented a Hash Table data structure from scratch to manage package data, achieving O(1) average-case lookup time and demonstrating deep proficiency in memory management.</Text>
-          <Text>Optimized execution logic to follow Object-Oriented Programming (OOP) principles, resulting in a modular system that allows for dynamic adjustments to delivery constraints without core logic interruption.</Text>
-
           <Tag>Python</Tag>
-          <Tag>Data Structures and Algorithms</Tag>
-
-          <br/>
-          <br/>
-
-          <br />
+          <Tag>SQL</Tag>
+          <Tag>HTML</Tag>
+          <Tag>CSS</Tag>
+          <Tag>Javascript</Tag>
 
           <div id="projects"></div>
           <br />
