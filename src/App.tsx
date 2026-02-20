@@ -144,7 +144,7 @@ function App() {
 
           <Header>Experience</Header>
 
-          <div>Software Engineer Intern, Skyfish</div>
+          <div>Software Engineer, Skyfish</div>
           <DateSubHeader>April 2025 - Present</DateSubHeader>
 
           <Text>Designed and implemented a versatile, cross-platform CI/CD pipeline using Bash scripts that was deployed in Bitbucket orchestrated inside a Docker container.</Text>
