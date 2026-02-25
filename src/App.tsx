@@ -120,8 +120,7 @@ function App() {
 
             <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '45px', marginBottom: '10px' }}>Thomas Smith</h1>
 
-            <div style={{ fontSize: '20px', letterSpacing: '-7%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
-            <p style={{ opacity: '50%' }}>Software Engineer with 4+ years of experience building mission-critical full-stack systems. Proven track record of developing secure, high-stakes software. Specializing in Python, Ruby on Rails, and AWS to build scalable architectures for computer vision and sensor-driven data.</p>
+            <div style={{ fontSize: '20px', letterSpacing: '-2%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
 
           </div>
 
