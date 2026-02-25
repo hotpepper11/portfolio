@@ -121,13 +121,14 @@ function App() {
             <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '45px', marginBottom: '10px' }}>Thomas Smith</h1>
 
             <div style={{ fontSize: '20px', letterSpacing: '-2%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
+            <p style={{ opacity: '50%', height: '40px' }}></p>
 
           </div>
 
           <br />
           <IconContainer className="icon-container-mobile">
             <a href="https://github.com/hotpepper11/" target="_blank"><FontAwesomeIcon icon={faGithub} /><br /></a>
-            <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a>
+            {/* <a href="https://www.linkedin.com/in/thomas-smith-bb06b4350/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /><br /></a> */}
             <a href="mailto:hotpepper156@gmail.com" target="_blank"><FontAwesomeIcon icon={faPaperPlane} /><br /></a>
           </IconContainer>
 
