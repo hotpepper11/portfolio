@@ -118,10 +118,12 @@ function App() {
           <div className="header-section">
             <div className="blob" style={{ zIndex: 5, position: 'absolute', width: '775px', height: '775px', background: '#3a884d50', filter: 'blur(300px)' }}></div>
 
-            <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '45px', marginBottom: '10px' }}>Thomas Smith</h1>
+            <div style={{ marginBottom: '40px' }}>
 
-            <div style={{ fontSize: '20px', letterSpacing: '-2%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
-            <p style={{ visibility: 'hidden' }}>Software Engineer with 4+ years of experience building mission-critical full-stack systems. Proven track record of developing secure, high-stakes software. Specializing in Python, Ruby on Rails, and AWS to build scalable architectures for computer vision and sensor-driven data.</p>
+              <h1 style={{ letterSpacing: '-4%', fontWeight: 500, fontSize: '45px', marginBottom: '10px' }}>Thomas Smith</h1>
+
+              <div style={{ fontSize: '20px', letterSpacing: '-2%', fontWeight: 400 }} className='sub-header'>Full Stack Software Engineer</div>
+            </div>
 
           </div>
 
